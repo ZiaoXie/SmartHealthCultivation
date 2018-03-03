@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthealthcultivation">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/AppTheme.concealTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recommend.RecommendView"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".forum.ForumView"
+            android:theme="@style/AppTheme.concealTitle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".recommend.TagSelect"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".personal.login"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".forum.NewTalk"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".ZhongYiTiZhi.TestView"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".personal.History"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".personal.UserLike"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".ZhongYiTiZhi.TiZhiResult"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".personal.PersonalCenter"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".personal.Register"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".recommend.HuangLi"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity android:name=".recommend.TagView"
+            android:theme="@style/AppTheme.concealTitle"></activity>
+    </application>
+
+</manifest>

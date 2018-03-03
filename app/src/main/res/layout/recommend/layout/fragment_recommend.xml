@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/planTableButtom">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/edit"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:src="@mipmap/jiahao"
+                    android:textColor="#fff"
+                    app:backgroundTint="#ff87ffeb"
+                    app:fabSize="normal"
+                    app:rippleColor="#33728dff" />
+
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/banner"
+                    android:layout_below="@id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="5dp"
+
+                    app:canLoop="true">
+                </com.bigkoo.convenientbanner.ConvenientBanner>
+
+                <LinearLayout
+                    android:id="@+id/knowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/banner">
+                    <LinearLayout
+                        android:id="@+id/huangli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:background="@drawable/shape_main_list_bg">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/year_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day"
+                                android:text="1998/01"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+                                <TextView
+                                    android:id="@+id/yinli_year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="1"
+                                    android:text="戊戌年"
+                                    android:layout_below="@+id/year_month"
+                                    android:textColor="#000000"/>
+                                <TextView
+                                    android:id="@+id/yinli_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="1"
+                                    android:text="腊月二十"
+                                    android:layout_below="@+id/year_month"
+                                    android:layout_toRightOf="@+id/yinli_year"
+                                    android:textColor="#000000"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/shape_round_textview"
+                                    android:text="宜"
+                                    android:layout_marginBottom="7dp"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textColor="#ffffff"/>
+
+                                <TextView
+                                    android:id="@+id/huangli_yi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="续命"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="15dp">
+                                <TextView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/shape_round_textview_white"
+                                    android:text="忌"
+                                    android:layout_marginBottom="7dp"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:id="@+id/huangli_ji"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="赛艇"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/shape_main_list_bg"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="三餐"
+                                android:textColor="#000000"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="幸运水果:雪莲果"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/shape_main_list_bg"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="起居"
+                                android:textColor="#000000"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="睡前泡脚"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_below="@+id/knowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:nestedScrollingEnabled="false">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</RelativeLayout>

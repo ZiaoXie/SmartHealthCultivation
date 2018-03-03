@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:src="@mipmap/demouser"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/head"
+            android:layout_alignTop="@+id/head"
+            android:textSize="25dp"
+            android:text="谢子傲"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/head"
+            android:textSize="18dp"
+            android:text="2小时前"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/zhengwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:textSize="20dp"
+            android:text="苟利国家生死以"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/numberfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="2楼"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/zhengwen"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+</RelativeLayout>

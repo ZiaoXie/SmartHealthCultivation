@@ -1,0 +1,100 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.concealTitle">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="HomePageRadio">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/radiotext</item>
+        <item name="android:color">@drawable/radiotext</item>
+    </style>
+
+    <style name="checkStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/select</item>
+    </style>
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">#0097a7</item>
+        <item name="atg_textColor">#0097a7</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">1dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">1dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+</resources>

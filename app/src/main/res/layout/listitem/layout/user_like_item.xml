@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_article_item"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/articlepic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/articlepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="震惊 程序员惨遭HR毒手真相竟然是······"
+        android:lines="1"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/articleabstract"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/articlepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:lines="3"
+        android:text=""/>
+
+</RelativeLayout>

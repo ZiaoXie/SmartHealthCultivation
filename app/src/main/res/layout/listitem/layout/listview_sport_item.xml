@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sportpic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/sportname"
+            android:layout_toRightOf="@id/sportpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="看了是不是很饿啊"
+            android:layout_marginTop="15dp"
+            android:layout_alignTop="@+id/sportpic"
+            android:lines="1" />
+
+    </LinearLayout>
+</RelativeLayout>

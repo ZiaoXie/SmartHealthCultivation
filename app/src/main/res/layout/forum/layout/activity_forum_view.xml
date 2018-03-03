@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forum_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smarthealthcultivation.forum.ForumView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/title_layout">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@mipmap/left"
+            android:background="#00000000"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="24dp"/>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="评论"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:background="#00000000"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="和大家分享一个养生经验"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

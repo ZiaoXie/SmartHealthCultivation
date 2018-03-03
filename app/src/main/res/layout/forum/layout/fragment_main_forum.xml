@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.smarthealthcultivation.forum.MainForum"
+    android:layout_marginBottom="@dimen/planTableButtom">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/title_layout">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:background="#00000000"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="养生论坛"
+            android:textColor="#fff"
+            android:textSize="24dp"/>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:background="#00000000"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/jiahao"
+
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="300dp"/>
+
+</RelativeLayout>
